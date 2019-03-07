@@ -46,7 +46,7 @@ class MyView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        print(frame.size)
+        // In our case the view has equal width and height so this formula convert it to circle )))
         layer.cornerRadius = frame.size.width * 0.5
         layer.masksToBounds = true
     }
